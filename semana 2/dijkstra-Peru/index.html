@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dijkstra Perú - Ruta Mínima</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="header-controls">
+    <select id="origen"></select>
+    <select id="destino"></select>
+    <select><option>Dijkstra</option></select>
+    <button onclick="calcularRuta()">Encontrar camino</button>
+</div>
+
+<div class="main-layout">
+    <div id="map"></div>
+    <div class="side-panel">
+        <div id="ruta-desglose">
+            </div>
+        <div id="info-distancia" class="distancia-total"></div>
+    </div>
+</div>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTIo1tcKopBUxXwJRCVe0hHrQ_CRdno5Y&callback=initMap" async defer></script>
+
+</body>
+</html>

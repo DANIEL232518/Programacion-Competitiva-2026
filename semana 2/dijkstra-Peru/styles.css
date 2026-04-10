@@ -1,0 +1,11 @@
+body { font-family: 'Arial', sans-serif; margin: 0; padding: 20px; background-color: #f0f2f5; }
+.header-controls { display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; }
+select, button { padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 14px; }
+button { background-color: #0044ff; color: white; border: none; cursor: pointer; font-weight: bold; }
+
+.main-layout { display: flex; gap: 20px; height: 600px; }
+#map { flex: 3; border: 2px solid #333; border-radius: 4px; }
+.side-panel { flex: 1; background: white; border: 1px solid #333; padding: 20px; overflow-y: auto; }
+
+h2 { text-align: center; margin-top: 0; }
+.distancia-total { font-weight: bold; margin-top: 20px; border-top: 1px solid #ccc; padding-top: 10px; }
