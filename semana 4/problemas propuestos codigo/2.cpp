@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int i, j;
+    while (cin >> i >> j) {
+        int original_i = i;
+        int original_j = j;
+        int inicio = i;
+        int fin = j;
+        if (inicio > fin) {
+            int temp = inicio;
+            inicio = fin;
+            fin = temp;}
+        int maxciclo = 0;
+        for (int k = inicio; k <= fin; k++) {
+            
+            long long n = k;
+            int cicloactual = 1; 
+
+            while (n != 1) {
+                if (n % 2 != 0) {
+                    n = 3 * n + 1;
+                } else {
+                    n = n / 2;     
+                }
+                cicloactual++;
+            }
+            if (cicloactual > maxciclo) {
+                maxciclo = cicloactual;
+            }
+        }
+        cout << original_i << " " << original_j << " " << maxciclo << endl;
+    }
+    return 0;
+}

@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int N, Q, caso = 1;
+    while (cin >> N >> Q && (N != 0 || Q != 0)) {
+        int canicas[10000];
+        for (int i = 0; i < N; i++) {
+            cin >> canicas[i];
+        }
+        for (int i = 0; i < N - 1; i++) {
+            for (int j = 0; j < N - i - 1; j++) {
+                if (canicas[j] > canicas[j + 1]) {
+                    int temp = canicas[j];
+                    canicas[j] = canicas[j + 1];
+                    canicas[j + 1] = temp;
+                }
+            }
+        }
+        cout << "caso# " << caso << ":" << endl;
+        for (int i = 0; i < Q; i++) {
+            int numero_buscado;
+            cin >> numero_buscado;
+            int posicion_encontrada = -1;
+            for (int j = 0; j < N; j++) {
+                if (canicas[j] == numero_buscado) {
+                    posicion_encontrada = j + 1;
+                    break;
+                }
+            }
+            if (posicion_encontrada != -1) {
+                cout << numero_buscado << " encontrado en " << posicion_encontrada << endl;
+            } else {
+                cout << numero_buscado << " no encontrado" << endl;
+            }
+        }
+        caso++;
+    }
+    return 0;
+}
