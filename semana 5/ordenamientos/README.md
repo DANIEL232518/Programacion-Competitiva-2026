@@ -1,4 +1,4 @@
-elegir el algoritmo de ordenamiento ideal es importante para no tener el error de Time Limit Exceeded.
+Elegir el algoritmo de ordenamiento ideal es importante para no tener el error de Time Limit Exceeded.
 en este programa se puede definir la cantidad de numeros a procesar, ademas de establecer un rango de valores minimo y maximo.
 tendremos una matrix donde se observar de forma comparativa entre los diferentes metodos de ordenamientos segun el tiempo de ejecucion, se visualizaran de mayor a menor.
 Algorimos implementados:
