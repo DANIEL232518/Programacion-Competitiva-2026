@@ -1,0 +1,6 @@
+*.exe
+*.o
+*.out
+*.class
+__pycache__/
+*.pyc
