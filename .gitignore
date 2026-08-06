@@ -1,4 +1,5 @@
 *.exe
+!UNIDAD 2/semana 18/problemas del IEEE_CS_EPIS_UNAP/*.exe
 *.o
 *.out
 *.class
